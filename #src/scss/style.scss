@@ -1,0 +1,54 @@
+@import 'reboot';
+@import 'vars';
+@import 'fonts';
+
+#map {
+  height: 100%;
+}
+
+/* Optional: Makes the sample page fill the window. */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.purchase {
+  padding: 10px;
+  margin: 10px;
+
+  margin-bottom: 20px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.2);
+  overflow: visible;
+
+  &:last-child {
+    margin-bottom: 10px;
+  }
+}
+
+.info-row {
+  margin-bottom: 10px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+.info-title {
+  font-weight: 700;
+  font-size: 18px;
+}
+.info-body {
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.payment-status {
+  &--not-payed {
+    color: red;
+  }
+  &--payed {
+    color: green;
+  }
+}
